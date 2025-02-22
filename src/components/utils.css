@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn{
+    color:white;
+    cursor: pointer;
+    gap: 20px;
+    border:2px solid black;
+    border-radius:10px;
+    padding:8px 10px;
+    margin:12px 5px;
+}
+
+.nav-btn:hover{
+    animation-name: fade;
+    animation-duration: 0.3s;
+    color: black;
+    background-color: white;
+}
+
+@keyframes fade{
+    0%{
+        color:white;
+        background-color: black;
+    }
+    /* 20%{
+        color: white;
+    } */
+    100%{
+        color: black;
+        background-color: white;
+    }
+}
+
+.nav-btn-active{
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.btn-container {
+    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.5); /* Adjusted for a soft glow */
+    background-color: black;
+    display: flex;
+    border-radius: 36px;
+    padding: 0 23px;
+    /* color:rgb(57, 12, 141) */
+}
+
+.purple{
+    color:rgb(208, 72, 253);
+    display:inline;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.purple-span{
+    color:rgb(208, 72, 253);
+    display:inline;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.white{
+    color: white;
+}
+
+.purple-btn{
+    background-color:rgb(57, 12, 141);
+    color:white;
+    font-weight: 1.1rem;
+    position:absolute;
+    right:23px;
+    padding:8px 23px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+
+.purple-btn:hover{
+    background-color:rgb(89, 30, 199);
+    font-size: 1.01rem;
+}
+
+/* .gradient {
+    background-image: linear-gradient(to bottom right, rgb(47, 0, 128) 1%, black 99%);
+    width: 100vw; 
+    height: 100vh;
+} */
+
+li{
+    cursor:pointer;text-decoration: none;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.812);
+    margin-bottom: 10px;
+    font-size: 0.93rem;
+}
+li:hover{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.812);
+}
+
+
+
+
+
+.footerRight{
+    margin:10px 10px;
+    padding:0 10px;
+    position:relative;
+    width:40vw;
+    margin:0 auto;
+
+}
+.footerLeft{
+    margin:10px 10px;
+    padding-left:123px;
+    position:relative;
+    width:60vw;
+    margin:0 auto;
+}
+
+
+
+/* width below 800px */
+@media (max-width: 800px){
+    .footerFlex{
+        flex-wrap: wrap;
+    }
+    .footerRight{
+        margin-left:18px;
+
+    }
+    .footerLeft{
+        padding-left:10px;
+        margin-left:20px;
+        margin-bottom:36px;
+    }
+
+}
+
+
+.certi{
+    position:relative;
+    left:-8px;
+    width:550px;
+    height:375px;
+}
+
+@media (max-width:1223px){
+    .certi{
+        width: 320px;
+        height: 218.17px;
+    }
+}

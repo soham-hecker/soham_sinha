@@ -1,0 +1,80 @@
+/* @media (max-width:860px){ */
+@media (max-width:1024px){
+    .nav-center{
+        visibility: hidden;
+
+    }
+    .book-service{
+        visibility: hidden;
+    }
+    .menu{
+        visibility: visible;
+    }
+}
+
+
+.book-service{
+    background-color: black;
+    height: 23px;
+    width: 49px;
+    z-index: 3;
+    position: absolute;
+    right: 36px
+}
+
+
+.menu {
+    position:absolute;
+    right:45px;
+    background-color:black;
+    height:34px;
+    width:34px;
+    cursor:pointer;
+    /* visibility:hidden; */
+}
+
+.dropdown {
+    z-index: 2;
+    background-color: black;
+    position:absolute;
+    right:23px;
+    top:23px;
+    width: 220px;
+    height: 250px;
+    border: 1px solid rgba(255, 0, 255, 0.732);
+    border-radius: 10px 0 14px 14px ;
+    visibility:visible;
+}
+.btn-container-dd{
+    /* display: flex; */
+    padding: 0 12px;
+    margin-top: 50px;
+}
+.nav-btn-dd{
+    display: block;
+    color:white;
+    cursor: pointer;
+    /* gap: 20px; */
+    margin:12px 5px;
+    font-weight: 600;
+}
+
+.nav-btn-dd:hover{
+    animation-name: fadeout;
+    animation-duration: 0.3s;
+    color: rgb(208, 72, 253);
+    font-weight: 600;
+}
+@keyframes fadeout{
+    0%{
+        color:white;
+    }
+    100%{
+        color: rgb(208, 72, 253);
+    }
+}
+
+.nav-btn-active-dd{
+    color: rgb(208, 72, 253);
+    font-weight: 600;
+}
